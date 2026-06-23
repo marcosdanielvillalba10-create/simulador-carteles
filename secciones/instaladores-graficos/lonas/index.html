@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Lonas</title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
+
+  <link
+    rel="icon"
+    href="../../../assets/logos/logo.png"
+    type="image/png"
+  />
+
+</head>
+
+<body>
+
+  <main class="pantalla">
+
+    <!-- PREVIEW -->
+
+    <section class="preview">
+
+      <div class="contenedorPreview">
+
+        <img
+          id="imagenFachada"
+          class="imagenFachada"
+          src=""
+          alt="Fachada"
+        />
+
+        <img
+          id="imagenLona"
+          class="imagenLona"
+          src=""
+          alt="Diseño"
+        />
+
+      </div>
+
+    </section>
+
+    <!-- PANEL -->
+
+    <section class="panel">
+
+      <img
+        src="../../../assets/logos/logo.png"
+        alt="Logo"
+        class="logoEmpresa"
+      />
+
+      <h1 class="titulo">
+        Probá tu lona
+      </h1>
+
+      <p class="subtitulo">
+        Simulá tu lona y obtené una estimación
+      </p>
+
+      <!-- ANCHO -->
+
+      <input
+        type="number"
+        id="anchoLona"
+        class="inputTexto"
+        placeholder="Ancho de la lona (metros)"
+      />
+
+      <!-- ALTO -->
+
+      <input
+        type="number"
+        id="altoLona"
+        class="inputTexto"
+        placeholder="Alto de la lona (metros)"
+      />
+
+      <!-- FOTO FACHADA -->
+
+      <input
+        type="file"
+        id="inputFotoFachada"
+        accept="image/*"
+        hidden
+      />
+
+      <button
+        id="botonSubirFoto"
+        class="botonPrincipal"
+      >
+        Subir foto de fachada
+      </button>
+
+      <!-- DISEÑO -->
+
+      <input
+        type="file"
+        id="inputDiseno"
+        accept="image/*"
+        hidden
+      />
+
+      <button
+        id="botonSubirDiseno"
+        class="botonPrincipal"
+      >
+        Subir diseño de lona
+      </button>
+
+      <!-- TAMAÑO -->
+
+      <div class="grupoBotones">
+
+        <button
+          id="botonMenos"
+          class="botonControl"
+        >
+          −
+        </button>
+
+        <button
+          id="botonMas"
+          class="botonControl"
+        >
+          +
+        </button>
+
+      </div>
+
+      <!-- ROTACIÓN -->
+
+      <div class="grupoBotones">
+
+        <button
+          id="rotarIzquierda"
+          class="botonControl"
+        >
+          ↺
+        </button>
+
+        <button
+          id="rotarDerecha"
+          class="botonControl"
+        >
+          ↻
+        </button>
+
+      </div>
+
+      <!-- POSICIÓN -->
+
+      <div class="controlesPosicion">
+
+        <button
+          id="moverArriba"
+          class="botonDireccion"
+        >
+          ↑
+        </button>
+
+        <div class="filaHorizontal">
+
+          <button
+            id="moverIzquierda"
+            class="botonDireccion"
+          >
+            ←
+          </button>
+
+          <button
+            id="moverDerecha"
+            class="botonDireccion"
+          >
+            →
+          </button>
+
+        </div>
+
+        <button
+          id="moverAbajo"
+          class="botonDireccion"
+        >
+          ↓
+        </button>
+
+      </div>
+
+      <!-- CONTACTO -->
+
+      <div class="grupoContacto">
+
+        <button
+          class="botonInstagram"
+          id="botonInstagram"
+        >
+          📷 Ver trabajos
+        </button>
+
+        <button
+          class="botonWhatsapp"
+          id="botonWhatsapp"
+        >
+          Recibir asesoramiento sin costo
+        </button>
+
+      </div>
+
+      <!-- RESULTADOS -->
+
+      <div class="resultadoCotizacion">
+
+        <p id="metrosCuadrados">
+          Metros cuadrados: —
+        </p>
+
+        <p id="precioEstimado">
+          Estimación: —
+        </p>
+
+        <p id="viatico">
+          Incluye tensado y materiales (no incluye instalación en fachada)
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="calculos.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
