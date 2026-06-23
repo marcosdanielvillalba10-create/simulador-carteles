@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Corpóreos
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
+<link
+  rel="icon"
+  href="../../../assets/logos/logo.png"
+  type="image/png"
+/>
+</head>
+
+<body>
+
+  <main class="pantalla">
+
+    <!-- =========================
+         PREVIEW
+    ========================== -->
+
+   <section class="preview">
+
+  <div class="contenedorPreview">
+
+    <img
+      id="imagenFachada"
+      class="imagenFachada"
+      src=""
+      alt="Fachada"
+    />
+
+    <div
+      class="cartelDemo"
+      id="cartelDemo"
+    >
+
+      <div class="fondoCartel"></div>
+
+      <div
+        class="textoCartel"
+        id="textoCartel"
+      >
+        TU CARTEL
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="selectorLocal">
+
+    <p class="tituloSelector">
+      Seleccioná el ancho de tu local
+    </p>
+
+    <div class="barraLocal">
+
+      <input
+        type="range"
+        id="inicioLocal"
+        min="0"
+        max="100"
+        value="15"
+      />
+
+      <input
+        type="range"
+        id="finLocal"
+        min="0"
+        max="100"
+        value="85"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- =========================
+         PANEL
+    ========================== -->
+
+    <section class="panel">
+<img
+ src="../../../assets/logos/logo.png"
+  alt="Logo"
+  class="logoEmpresa"
+/>
+      <h1 class="titulo">
+        Probá tu cartel
+      </h1>
+
+      <p class="subtitulo">
+        Personalizá tu fachada
+      </p>
+
+      <!-- TEXTO -->
+
+      <input
+        type="text"
+        id="inputTexto"
+        class="inputTexto"
+        placeholder="Escribí el nombre"
+      />
+
+      <!-- FACHADA -->
+
+      <input
+        type="number"
+        id="inputFachada"
+        class="inputTexto"
+        placeholder="Ancho aproximado de fachada (cm)"
+      />
+
+      <!-- FOTO -->
+
+      <input
+        type="file"
+        id="inputFoto"
+        accept="image/*"
+        hidden
+      />
+
+      <button
+        id="botonSubirFoto"
+        class="botonPrincipal"
+      >
+        Subir foto
+      </button>
+
+      <!-- COLOR -->
+
+      <select
+        id="selectorColor"
+        class="inputTexto"
+      >
+
+        <option value="#ffffff">
+          Blanco
+        </option>
+
+        <option value="#000000">
+          Negro
+        </option>
+
+        <option value="#d4af37">
+          Dorado
+        </option>
+
+        <option value="#c0c0c0">
+          Plateado
+        </option>
+
+        <option value="#ff0000">
+          Rojo
+        </option>
+
+        <option value="#0066ff">
+          Azul
+        </option>
+
+      </select>
+
+      <!-- TIPOGRAFIA -->
+
+      <select
+        id="selectorTipografia"
+        class="inputTexto"
+      >
+
+        <option value="Inlanders">
+          Inlanders
+        </option>
+
+        <option value="Montserrat">
+          Montserrat
+        </option>
+
+        <option value="Sono">
+          Sono
+        </option>
+
+      </select>
+
+      <!-- ESTILO -->
+
+      <select
+  id="selectorEstilo"
+  class="inputTexto"
+>
+
+  <option value="acrilico">
+    Frente acrílico
+  </option>
+
+  <option value="polifan">
+    Polifan
+  </option>
+
+  <option value="galvanizado">
+    Galvanizado
+  </option>
+
+</select>
+
+      <!-- TAMAÑO -->
+
+      <div class="grupoBotones">
+
+        <button
+          id="botonMenos"
+          class="botonControl"
+        >
+          −
+        </button>
+
+        <button
+          id="botonMas"
+          class="botonControl"
+        >
+          +
+        </button>
+
+      </div>
+
+      <!-- ROTACION -->
+
+      <div class="grupoBotones">
+
+        <button
+          id="rotarIzquierda"
+          class="botonControl"
+        >
+          ↺
+        </button>
+
+        <button
+          id="rotarDerecha"
+          class="botonControl"
+        >
+          ↻
+        </button>
+
+      </div>
+
+      <!-- POSICION -->
+
+      <div class="controlesPosicion">
+
+        <button
+          id="moverArriba"
+          class="botonDireccion"
+        >
+          ↑
+        </button>
+
+        <div class="filaHorizontal">
+
+          <button
+            id="moverIzquierda"
+            class="botonDireccion"
+          >
+            ←
+          </button>
+
+          <button
+            id="moverDerecha"
+            class="botonDireccion"
+          >
+            →
+          </button>
+
+        </div>
+
+        <button
+          id="moverAbajo"
+          class="botonDireccion"
+        >
+          ↓
+        </button>
+
+      </div>
+
+      <!-- BOTONES CONTACTO -->
+
+<div class="grupoContacto">
+
+  <button
+    class="botonInstagram"
+    id="botonInstagram"
+  >
+    📷 Ver trabajos
+  </button>
+
+  <button
+    class="botonWhatsapp"
+    id="botonWhatsapp"
+  >
+    Recibir asesoramiento sin costo
+  </button>
+
+</div>
+
+      <!-- RESULTADO -->
+
+      <div class="resultadoCotizacion">
+
+        <p id="altoEstimado">
+          Alto estimado: —
+        </p>
+
+        <p id="cantidadLetras">
+          Letras: —
+        </p>
+
+        <p id="precioEstimado">
+          Estimación: —
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="calculos.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>

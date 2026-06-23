@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  background:
+    #0f1115;
+
+  color:
+    white;
+}
+
+.pantallaInicio{
+
+  min-height:
+    100vh;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    24px;
+}
+
+.contenedor{
+
+  width:
+    100%;
+
+  max-width:
+    420px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    18px;
+}
+
+.titulo{
+
+  text-align:
+    center;
+
+  font-size:
+    32px;
+
+  margin-bottom:
+    12px;
+}
+
+.botonPrincipal,
+.botonSecundario{
+
+  width:
+    100%;
+
+  border:
+    none;
+
+  border-radius:
+    20px;
+
+  padding:
+    22px;
+
+  font-size:
+    20px;
+
+  font-weight:
+    bold;
+
+  text-align:
+    center;
+
+  text-decoration:
+    none;
+
+  cursor:
+    pointer;
+
+  transition:
+    0.2s;
+}
+
+.botonPrincipal{
+
+  background:
+    white;
+
+  color:
+    black;
+}
+
+.botonPrincipal:active{
+
+  transform:
+    scale(0.98);
+}
+
+.botonSecundario{
+
+  background:
+    #1a1d24;
+
+  color:
+    white;
+}
+
+.botonSecundario span{
+
+  display:
+    block;
+
+  font-size:
+    14px;
+
+  opacity:
+    0.6;
+
+  margin-top:
+    6px;
+}

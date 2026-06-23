@@ -1,0 +1,244 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  background:
+    #0f1115;
+
+  color:
+    white;
+}
+
+.pantalla{
+
+  min-height:
+    100vh;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview{
+
+  flex:
+    1;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    20px;
+}
+
+.contenedorPreview{
+
+  width:
+    100%;
+
+  height:
+    48vh;
+
+  border-radius:
+    24px;
+
+  background:
+    #1a1d24;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+}
+
+.cartelDemo{
+
+  font-size:
+    42px;
+
+  font-weight:
+    bold;
+
+  color:
+    white;
+
+  text-align:
+    center;
+
+  text-transform:
+    uppercase;
+
+  text-shadow:
+    0 4px 12px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   PANEL
+========================= */
+
+.panel{
+
+  background:
+    #15181e;
+
+  border-top-left-radius:
+    28px;
+
+  border-top-right-radius:
+    28px;
+
+  padding:
+    24px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    16px;
+}
+
+.titulo{
+
+  font-size:
+    30px;
+}
+
+.subtitulo{
+
+  opacity:
+    0.7;
+
+  font-size:
+    15px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.inputTexto{
+
+  width:
+    100%;
+
+  border:
+    none;
+
+  border-radius:
+    18px;
+
+  padding:
+    18px;
+
+  font-size:
+    18px;
+
+  background:
+    #1d2129;
+
+  color:
+    white;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.botonPrincipal,
+.botonWhatsapp,
+.botonControl{
+
+  border:
+    none;
+
+  border-radius:
+    18px;
+
+  padding:
+    18px;
+
+  font-size:
+    18px;
+
+  font-weight:
+    bold;
+
+  cursor:
+    pointer;
+}
+
+.botonPrincipal{
+
+  background:
+    white;
+
+  color:
+    black;
+}
+
+.botonWhatsapp{
+
+  background:
+    #25D366;
+
+  color:
+    white;
+}
+
+.grupoBotones{
+
+  display:
+    flex;
+
+  gap:
+    12px;
+}
+
+.botonControl{
+
+  flex:
+    1;
+
+  background:
+    #222733;
+
+  color:
+    white;
+}
